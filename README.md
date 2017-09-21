@@ -8,9 +8,9 @@ You may create a new `db.json` file by running the `generateDB.js` file and adju
 
 We will be checking the final submission against the `final-test.json` file.
 
-You may launch the server with the `final-test.json` db by running `npm run check`.
+You may launch the server with the `final-test.json` file by running `npm run check`.
 
-The API route you will want to use is `http://localhost:8000/locations`, and the data it serves up is of shape:
+The API route that serves the data is `http://localhost:8000/locations`, and the data it serves up is of shape:
 ```
 {
     "id": 0,
