@@ -4,13 +4,13 @@ This fake server uses `faker.js` and `json-server` in order to serve up fake loc
 
 Run default server with `npm start`, this will serve up the contents in `db.json`.
 
-You may create a new `db.json` file by running the `generateDB.js` file and adjusting the `numberOfEntries` value.
+You may create a new `db.json` file by running the `generateDB.js` file and adjusting the `numberOfEntries` value contained inside it.
 
 We will be checking the final submission against the `final-test.json` file.
 
 You may launch the server with the `final-test.json` file by running `npm run check`.
 
-The API route that serves the data is `http://localhost:8000/locations`, and the data it serves up is of shape:
+The API route that serves the data is `http://localhost:8001/locations`, and the data it serves up is of shape:
 ```
 {
     "id": 0,
