@@ -7002,10 +7002,10 @@
         }
     ],
     "buildingTypes": [
-        "multiFamily",
-        "condo",
-        "business",
-        "office",
-        "singleFamily"
+        { "id": 0, "name": "multiFamily" },
+        { "id": 1, "name": "condo" },
+        { "id": 2, "name": "business" },
+        { "id": 3, "name": "office" },
+        { "id": 4, "name": "singleFamily" }
     ]
 }
