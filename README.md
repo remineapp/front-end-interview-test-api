@@ -24,9 +24,18 @@ The API route that serves the location data is `http://localhost:8001/locations`
 }
 ```
 
-The API route that serves the building types is `http://localhost:8001/buildingTypes`.
+The API route that serves the building types is `http://localhost:8001/buildingTypes`.  The response is:
+```
+[
+  "multiFamily",
+  "condo",
+  "business",
+  "office",
+  "singleFamily"
+]
+```
 
-The API route for all subscriptionPlans is `http://localhost:8001/subscriptionPlans`.  The data shape is as follows:
+The API route for all subscriptionPlans is `http://localhost:8001/subscriptionPlans`.  The response is:
 ```
 [
   {
