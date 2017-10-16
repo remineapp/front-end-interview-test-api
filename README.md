@@ -1,7 +1,7 @@
 ### Front End Interview Test API
 
 #### Usage
-This fake server uses `faker.js` and `json-server` in order to serve up fake location data.
+This fake server uses `faker.js` and `json-server` in order to serve up fake data for our front end test.
 
 Run default server with `npm start`, this will serve up the contents in `db.json`.
 
