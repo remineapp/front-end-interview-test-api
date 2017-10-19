@@ -2,7 +2,7 @@ const faker = require('faker');
 const jsonfile = require('jsonfile');
 
 //Minimum number of entries is 100
-const numberOfEntries = 10000;
+const numberOfEntries = 1000;
 
 if (numberOfEntries < 100) {
     numberOfEntries = 100;
@@ -17,15 +17,15 @@ const generateStreetAddress = () => {
 };
 
 const buildingTypes = [
-    { id: 1, type: 'multiFamily' }, 
-    { id: 2, type: 'condo' }, 
-    { id: 3, type: 'business' }, 
-    { id: 4, type: 'office' }, 
-    { id: 5, type: 'singleFamily' }
+    { id: 1, name: 'multiFamily' }, 
+    { id: 2, name: 'condo' }, 
+    { id: 3, name: 'business' }, 
+    { id: 4, name: 'office' }, 
+    { id: 5, name: 'singleFamily' }
 
 ];
 
-const jsonFile = 'final-test.json';
+const jsonFile = 'db.json';
 
 let jsonOutput = {
     locations: [],
