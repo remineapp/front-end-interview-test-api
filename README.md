@@ -105,3 +105,14 @@ The API route for all users is `http://localhost:8001/user`.  You can request a 
   }
 }
 ```
+#### Known Solutions for Issues on Linux
+If you are running the service on a Linux Distro and recieve an ENOSPC error after trying to use the `npm start` or `npm run check` command
+1. First make sure you are not out of disk space by checking the output of the command below. If you notice a high percentage in the use column, you are running out of disk and need to clean up your hard drive  
+```sh
+df -h /
+```
+2. If you have no disk space issues, the error is most likely due to having vscode open while running the script. Try closing out of all instances of vscode and running the script in terminal before restarting vscode.
+  - If you are on a Debian based distro (e.g: Ubuntu) and the above solution does not work you can try to run the following as a last resort.
+  ```sh
+  echo fs.inotify.max_user_watches=524288 | sudo tee -a /etc/sysctl.conf && sudo sysctl -p
+  ```
